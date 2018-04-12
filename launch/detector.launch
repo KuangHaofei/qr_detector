@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <launch>
+
+    <node pkg="rosbag" type="play" name="rosbag"
+          args="--clock /home/kuang/workspace/chy_ws/2018-04-12-18-16-29.bag">
+
+        <remap from="/camera/color/image_raw" to="/image"/>
+    </node>
+
     <node pkg="nodelet" type="nodelet" name="qr_detector"
           args="standalone qr_detector/qr_detector_nodelet">
-        <remap from="image" to="kinect/rgb/image_raw"/>
     </node>
+
 </launch>
