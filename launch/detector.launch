@@ -2,9 +2,9 @@
 <launch>
 
     <node pkg="rosbag" type="play" name="rosbag"
-          args="--clock /home/kuang/workspace/chy_ws/2018-04-12-18-16-29.bag">
+          args="--clock /home/kuanghf/workspace/Robotics/ROS/qr.bag">
 
-        <remap from="/camera/color/image_raw" to="/image"/>
+        <remap from="/camera/image_raw" to="/image"/>
     </node>
 
     <node pkg="nodelet" type="nodelet" name="qr_detector"
