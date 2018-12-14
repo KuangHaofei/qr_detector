@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <launch>
-
+<!-- 
     <node pkg="rosbag" type="play" name="rosbag"
           args="--clock /home/kuanghf/workspace/Robotics/ROS/qr.bag">
 
         <remap from="/camera/image_raw" to="/image"/>
     </node>
-
+ -->
     <node pkg="nodelet" type="nodelet" name="qr_detector"
           args="standalone qr_detector/qr_detector_nodelet">
+          <remap from="/camera/image_raw" to="/image"/>
     </node>
 
 </launch>

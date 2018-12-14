@@ -9,3 +9,9 @@ Publishes:
 
 
 The package was tested on ROS Kinetic but it should work too with older ROS versions if they used gcc which supports c++11.
+
+## Dependencies
+- zbar
+	```
+	sudo apt-get install ros-kinetic-zbar-ros
+	```
