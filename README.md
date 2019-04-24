@@ -15,3 +15,13 @@ The package was tested on ROS Kinetic but it should work too with older ROS vers
 	```
 	sudo apt-get install ros-kinetic-zbar-ros
 	```
+
+## Running
+```
+roslaunch qr_detector detector.launch 
+```
+
+## Print Results
+```
+rostopic echo /qr_codes
+```
